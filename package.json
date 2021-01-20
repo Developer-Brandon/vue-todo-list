@@ -1,6 +1,7 @@
 {
   "name": "vue-todo-list",
   "version": "0.1.0",
+  "autor": "Brandon Lee <lovefinance@naver.com>",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,30 +10,104 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "webpack": "^4.44.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "@babel/preset-env": "^7.12.11",
+    "eslint": "^5.16.0",
+    "eslint-webpack-plugin": "^2.4.3",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^7.1.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^1.2.1"
   },
   "eslintConfig": {
     "root": true,
     "env": {
+      "browser": true,
       "node": true
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/airbnb"
+    ],
+    "plugins": [
+      "html",
+      "vue"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "babel-eslint",
+      "ecmaVersion": 9,
+      "sourceType": "module"
     },
-    "rules": {}
+    "rules": {
+      "vue/html-self-closing": [
+        "error",
+        {
+          "html": {
+            "void": "always",
+            "normal": "never",
+            "component": "any"
+          }
+        }
+      ],
+      "vue/attributes-order": [
+        "error",
+        {
+          "order": [
+            "DEFINITION",
+            "LIST_RENDERING",
+            "CONDITIONALS",
+            "RENDER_MODIFIERS",
+            "GLOBAL",
+            "UNIQUE",
+            "TWO_WAY_BINDING",
+            "OTHER_DIRECTIVES",
+            "OTHER_ATTR",
+            "EVENTS",
+            "CONTENT"
+          ],
+          "alphabetical": false
+        }
+      ],
+      "semi": [
+        2,
+        "never"
+      ],
+      "max-len": "off",
+      "no-underscore-dangle": "off",
+      "no-lonely-if": "off",
+      "class-methods-use-this": "off",
+      "import/prefer-default-export": "off",
+      "no-param-reassign": "off",
+      "vue/valid-v-model": "off",
+      "vue/no-v-html": "off",
+      "no-else-return": "off",
+      "no-alert": "off",
+      "consistent-return": "off",
+      "no-shadow": [
+        "error",
+        {
+          "allow": [
+            "state"
+          ]
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",

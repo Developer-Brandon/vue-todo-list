@@ -1,0 +1,15 @@
+//@ Screen size variable
+$screen-desktop: 992px;
+$screen-tablet: 768px;
+$screen-mobile: $screen-tablet - 1px;
+$screen-desktop-another: 1200px;
+$screen-tablet-max: $screen-desktop - 1px;
+$screen-tablet-max-another: $screen-desktop-another - 1px;
+$grid-gutter-width: 30px !default;
+
+//@ Contents size variable
+$contents-width: 980px;
+$contents-height: 0;
+
+//@ Color variable
+$td-color: #cdc7af;

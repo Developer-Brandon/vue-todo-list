@@ -1,0 +1,54 @@
+/* Thin */
+@font-face {
+  font-family: 'Arita';
+  font-weight: 100;
+  src: url('~@/assets/fonts/aritaDotum/Arita-Dotum-Thin.ttf');
+}
+
+/* Light */
+@font-face {
+  font-family: 'Arita';
+  font-weight: 200;
+  src: url('~@/assets/fonts/aritaDotum/Arita-Dotum-Light.ttf');
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Arita';
+  font-weight: 300;
+  src: url('~@/assets/fonts/aritaDotum/Arita-Dotum-Medium.ttf');
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: 'Arita';
+  font-weight: 400;
+  src: url('~@/assets/fonts/aritaDotum/Arita-Dotum-Semi-Bold.ttf');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Arita';
+  font-weight: 700;
+  src: url('~@/assets/fonts/aritaDotum/Arita-Dotum-Bold.ttf');
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 200;
+}
+
+.font-regular {
+  font-weight: 300;
+}
+
+.font-semi-bold {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}

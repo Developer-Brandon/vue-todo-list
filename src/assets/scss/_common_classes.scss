@@ -1,0 +1,36 @@
+.clear-both {
+  clear: both;
+}
+
+.mobile-visible-block-only {
+  display: none;
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}
+
+.desktop-visible-block-only {
+  display: block;
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
+}
+
+.mobile-visible-inline-only {
+  display: none;
+  @media (max-width: $screen-mobile) {
+    display: inline;
+  }
+}
+
+.desktop-visible-inline-only {
+  display: inline;
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
+}
+
+.common-inner-container {
+  width: 100%;
+  height: 100%;
+}

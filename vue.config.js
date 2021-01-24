@@ -19,7 +19,7 @@ module.exports = {
     plugins: [
       new webpack.BannerPlugin({
         banner:
-     `Developer: ${developer} (${realName})\n
+        `Developer: ${developer} (${realName})\n
          Email: ${email}\n
          Github: ${github}\n`,
       }),

@@ -1,7 +1,9 @@
 <template>
-    <section class="main-inner-container">
-        <img class="home"/>
-    </section>
+    <transition class="page-fade">
+        <section class="main-inner-container">
+            <img class="home"/>
+        </section>
+    </transition>
 </template>
 
 <script>

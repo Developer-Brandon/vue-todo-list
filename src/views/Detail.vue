@@ -1,11 +1,13 @@
 <template>
-    <section class="inner-container">
-        <button class="td-button">쓰&nbsp;기</button>
-        <td-clear-both />
-        <ul>
-            <li></li>
-        </ul>
-    </section>
+    <transition class="page-fade">
+        <section class="inner-container">
+            <button class="td-button">쓰&nbsp;기</button>
+            <td-clear-both/>
+            <!--<ul>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+        </section>
+    </transition>
 </template>
 
 <script>
@@ -33,7 +35,7 @@ export default {
     .inner-container {
         top: 100px;
         width: 1000px;
-        margin:0 auto;
+        margin: 0 auto;
         padding-top: 100px;
         padding-bottom: 100px;
     }

@@ -50,6 +50,7 @@ export default {
             position: absolute;
             width: 1200px;
             height: 80px;
+            top: 10px;
             left: 50%;
             margin-left: -600px;
             padding-right: 100px;
@@ -105,6 +106,10 @@ export default {
                         vertical-align: middle;
                         line-height: 19px;
                         font-size: 19px;
+                        transition: 0.4s;
+                        &:hover {
+                            font-weight: 800;
+                        }
                     }
                 }
             }
